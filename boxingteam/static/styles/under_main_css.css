@@ -1,5 +1,4 @@
 body{
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	line-height: 1.5;
 	padding: 0;
@@ -132,10 +131,11 @@ header .material-symbols-outlined {
 	min-height: 570px;
 }
 
+
 #urtreiners h1{
 	color: black;
 	text-align: center;
-	margin-top: 80px;
+	margin-top: 40px;
 	font-size: 55px;
 	margin-bottom: 80px;
 }
@@ -153,7 +153,8 @@ header .material-symbols-outlined {
 #urtreiners a{
 	background-color:black;
   	color: white;
-  	padding: 15px 25px;
+  	padding: 15px 45px;
+  	font-size: 18px;
   	text-align: center;
   	text-decoration: none;
   	overflow: hidden;
@@ -168,7 +169,7 @@ header .material-symbols-outlined {
 #urtreiners .one{
 	float: left;
 	text-align: center;
-	margin : 0 0 20px 150px;
+	margin : 0 0 20px 180px;
 }
 
 #urtreiners .one h3{
@@ -178,7 +179,7 @@ header .material-symbols-outlined {
 
 #urtreiners .two{
 	float: right;
-	margin: 0 150px 20px 0;
+	margin: 0 180px 20px 0;
 	text-align: center;
 }
 
@@ -203,7 +204,7 @@ header .material-symbols-outlined {
     background-color: white;
 }
 
-#aboutus .left img{	
+#aboutus .left img{
 	margin: 80px 50px 0 -30px;
 }
 
@@ -230,6 +231,7 @@ header .material-symbols-outlined {
 
 #aboutus .center p{
 	margin: 20px;
+	font-size: 20px;
 }
 
 #aboutus .right{
@@ -243,6 +245,45 @@ header .material-symbols-outlined {
 
 #aboutus .right h1{
 	margin-left: 30px;
+}
+
+
+
+/*peoplesay*/
+#peoplesay{
+	height: 570px;
+	border-bottom:black 2px solid;
+	background-image: url("girl.jpg");
+	background-attachment: cover;
+	background-size: cover;
+}
+
+#peoplesay #lefth1{
+	color: white;
+	font-size: 40px;
+	margin: 0;
+	padding: 120px 0 0 130px;
+}
+
+#peoplesay #righth1{
+	float: right;
+	color: white;
+	font-size: 40px;
+	margin: -50px 80px 0 0;
+	padding: 0 50px 0 20px;
+}
+
+#peoplesay #lefth2{
+	color: white;
+	font-size: 30px;
+	padding: 180px 0 0 350px;
+}
+
+#peoplesay #righth2{
+	color: white;
+	float: right;
+	font-size: 30px;
+	margin: -60px 380px 0 400px;
 }
 
 
@@ -265,13 +306,13 @@ header .material-symbols-outlined {
 }
 
 #jointomovement .left h1{
-	font-size: 33px;
-	margin: 50px 0 -20px 50px ;
+	font-size: 35px;
+	margin: 60px 0 -10px 60px ;
 }
 
 #jointomovement .left p{
-	font-size: 17px;
-	margin: 33px 0 0 50px ;
+	font-size: 18px;
+	margin: 20px 0 0 60px ;
 }
 
 #jointomovement .right{
@@ -339,7 +380,6 @@ header .material-symbols-outlined {
 	height: 550px;
 	background-image: url("ufc.jpg");
 	background-attachment: fixed;
-	background-size: cover;
 }
 
 #update-user .update-box{
@@ -366,7 +406,6 @@ header .material-symbols-outlined {
 #register-sec {
 	height: 570px;
 	background-image: url("ufc.jpg");
-	background-size: cover;
 }
 
 .register {
@@ -462,10 +501,12 @@ form .user-details .input-box{
 
 
 
+
+
 /* Login */
 #login {
 	height: 570px;
-	background-size: cover;
+	background-image: url("ufc.jpg");
 }
 
 #login .login-box{
@@ -607,10 +648,6 @@ input[type="submit"]:hover{
   	position: relative;
   	float: right;
 }
-
-
-
-
 
 
 
