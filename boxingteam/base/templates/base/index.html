@@ -1,0 +1,69 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+	<section id="showcase" style="background-image: url('{% static 'images/ufc.jpg' %}')">
+		<div class="container">
+			<h1>Займись собой!</h1>
+			<p>Кто как не ты способен изменить свою жизнь и свои привычки!</p>
+		</div>
+	</section>
+
+	<section id="urtreiners">
+		<div class="container">
+			<h1>Познакомься со своими тренерами</h1>
+			<div class="one">
+				<img src="{% static 'images/me.jpg' %}" width=400 height=400>
+				<h3>Тренер по тайскому боксу!</h3>
+				<a href="{% url 'user-page' 1 %}">Узнай больше</a>
+			</div>
+			<div class="two">
+				<img src="{% static 'images/vova.jpg' %}" width=400>
+				<h3>Тренер по борьбе!</h3>
+				<a href="{% url 'user-page' 7 %}">Узнай больше</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="aboutus">
+		<div class="container">
+			<div class="left">
+				<img src="{% static 'images/boyphoto.jpg' %}" width=350 height=350>
+			</div>
+
+			<div class="center">
+				<h3>насчет нас</h3>
+				<h1>Это место особенное</h1>
+				<h1>...</h1>
+				<p>Оборудованное место под многие виды боевых искусств.Все сделано кровью и потом,с душой!Здесь ты сможешь постоять в парах с мастерами своего дела,услышать и узнать много нового,а так же получить заряд энергии и мотивации.Каждый желающий может принять участие,не зависимо,новичек ты или профи своего дела.Качественное снаряжение и боевой дух - залог хорошей тренировки!</p>
+			</div>
+
+			<div class="right">
+				<h1>01</h1>
+		  </div>
+		</div>  
+	</section>
+
+	<section id="jointomovement">
+		<div class="container" >
+			<div class="left">
+				<h1>ПРИСОЕДИНЯЙТЕСЬ К ДВИЖЕНИЮ</h1>
+				<p>Здесь вы сможете отточить свои навыки в боевых искусствах,научитесь постоять за себя и своих близких!</p>
+				<h1>ПРЕОБРАЗУЙТЕ ЖИЗНИ</h1>
+				<p>Вы научитесь быть сконцетрированными,ставить цели и добиваться  их!</p>
+				<h1>ГОТОВЬТЕСЬ К СРАЖЕНИЮ!</h1>
+				<p>Как в жизни так и в бою есть сражения,вы научиться принимать их и бороться с ними!</p>
+			</div>
+		
+			<div class="right">
+				<img src="{% static 'images/images.jpg' %}" width=400 height=500>
+			</div>
+
+		</div>
+	</section>
+
+	<footer>
+	    <p>&copy Die or Work hard</p>
+    </footer>
+{% endblock content %}

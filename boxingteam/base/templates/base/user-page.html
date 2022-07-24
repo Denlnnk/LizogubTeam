@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <img src="{{user.avatar.url}}" width=300>
+    <p> Name: {{user.name}}.
+        About: {{user.bio}}.
+        Section: {{user.section}}.</p>
+
+{% endblock content %}

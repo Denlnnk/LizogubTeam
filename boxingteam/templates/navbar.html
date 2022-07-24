@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LizUnderground</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/under_main_css.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1><a href="{% url 'home' %}"><span class="material-symbols-outlined text-warning" style="font-size:26px;">fitness_center</span></a>LizogubTeam</h1>
+	    	</div>
+
+			{% if request.user.is_authenticated %}
+			<nav>
+	    		<div class="navbar">
+					<a href="{% url 'team' %}">Команда</a>
+					<a href="">Расписание</a>
+					<div class="dropdown">
+						<button class="dropbtn">{{user.name}}
+						 <i class="fa fa-caret-down"></i>
+						</button>
+							<div class="dropdown-content">
+						  		<a href="{% url 'update-user' %}">Настройки</a>
+						  		<a href="{% url 'logout' %}">Выйти</a>
+							</div>
+					</div>
+				</div>
+			</nav>
+			{% else %}
+			<nav>
+	    		<div class="navbar">
+					<a href="">Команда</a>
+					<a href="">Расписание</a>
+					<a href="{% url 'login' %}">Войти в аккаунт</a>
+				</div>
+			</nav>
+			{% endif %}
+		</div>
+	</header>
