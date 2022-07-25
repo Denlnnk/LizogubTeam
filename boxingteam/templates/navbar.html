@@ -15,30 +15,25 @@
 				<h1><a href="{% url 'home' %}"><span class="material-symbols-outlined text-warning" style="font-size:26px;">fitness_center</span></a>LizogubTeam</h1>
 	    	</div>
 
-			{% if request.user.is_authenticated %}
+
 			<nav>
 	    		<div class="navbar">
-					<a href="{% url 'team' %}">Команда</a>
-					<a href="">Расписание</a>
+					<a href="{% url 'team' %}">Team</a>
+					<a href="">Telegram bot</a>
+					{% if request.user.is_authenticated %}
 					<div class="dropdown">
 						<button class="dropbtn">{{user.name}}
 						 <i class="fa fa-caret-down"></i>
 						</button>
 							<div class="dropdown-content">
-						  		<a href="{% url 'update-user' %}">Настройки</a>
-						  		<a href="{% url 'logout' %}">Выйти</a>
+						  		<a href="{% url 'update-user' %}">Settings</a>
+						  		<a href="{% url 'logout' %}">Log out</a>
 							</div>
+						{% else %}
+							<a href="{% url 'login' %}">Войти в аккаунт</a>
+						{% endif %}
 					</div>
 				</div>
 			</nav>
-			{% else %}
-			<nav>
-	    		<div class="navbar">
-					<a href="">Команда</a>
-					<a href="">Расписание</a>
-					<a href="{% url 'login' %}">Войти в аккаунт</a>
-				</div>
-			</nav>
-			{% endif %}
 		</div>
 	</header>
