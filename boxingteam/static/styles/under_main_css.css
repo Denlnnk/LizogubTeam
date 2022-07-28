@@ -1,0 +1,664 @@
+body{
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+
+
+/* global */
+.container{
+	margin: 0 60px 0 50px;
+	overflow: hidden;
+}
+
+
+
+/* Header */
+header{
+	background: #010004;
+	color: #ffffff;
+	min-height: 70px;
+}
+
+header #branding{
+	float: left;
+	margin: 0;
+}
+
+header nav{
+	float: right;
+	margin-top: 32px;
+}
+
+header .material-symbols-outlined {
+	color: #ffffff;
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 3px 20px;
+  text-decoration: none;
+}
+
+.navbar .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 6px 16px;
+  background-color: black;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	color:grey;
+  	background-color: dark;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+  	background-color: #ddd;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/* Showcase  */
+#showcase{
+	color: #ffffff;
+	min-height: 570px;
+	background-image: url("ufc.jpg");
+	background-attachment: cover;
+	background-size: cover;
+	border-bottom:black 2px solid;
+	text-align: center;
+}
+
+#showcase h1{
+	margin-top: 30px;
+	font-size: 55px;
+	margin-bottom: 20px;
+}
+
+#showcase p{
+	font-size: 25px;
+}
+
+
+
+/* Urtainers */
+#urtreiners {
+	width: 100%;
+	padding: 15px;
+	background-color: #ffffff;
+	border-bottom:black 2px solid;
+	min-height: 570px;
+}
+
+
+#urtreiners h1{
+	color: black;
+	text-align: center;
+	margin-top: 40px;
+	font-size: 55px;
+	margin-bottom: 80px;
+}
+
+#urtreiners h3{
+	color: black;
+	margin-left: 80px;
+	font-size: 20px;
+	font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 20px 0 0;
+}
+
+#urtreiners a{
+	background-color:black;
+  	color: white;
+  	padding: 15px 35px;
+  	font-size: 16px;
+  	text-align: center;
+  	text-decoration: none;
+  	overflow: hidden;
+  	display: inline-block;
+}
+
+#urtreiners a:hover{
+	color: black;
+	background-color: red;
+}
+
+#urtreiners .one{
+	float: left;
+	text-align: center;
+	margin : 0 0 20px 180px;
+}
+
+#urtreiners .one h3{
+	padding-bottom: 40px;
+}
+
+
+#urtreiners .two{
+	float: right;
+	margin: 0 180px 20px 0;
+	text-align: center;
+}
+
+
+#urtreiners .two h3{
+	padding-left: 20px;
+	padding-bottom: 40px;
+}
+
+
+
+/* About us */
+#aboutus {
+	min-height: 570px;
+	border-bottom:black 2px solid;
+}
+
+#aboutus .left {
+	width: 30%;
+    height: 570px;
+    float: left;
+    background-color: white;
+}
+
+#aboutus .left img{
+	margin: 80px 50px 0 -30px;
+}
+
+
+#aboutus .center{
+	width: 50%;
+    height: 570px;
+    float: left;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+#aboutus .center h3{
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+#aboutus .center h1{
+	margin-top: -20px;
+	margin-left: 20px;
+	font-size: 50px;
+}
+
+#aboutus .center p{
+	margin: 20px;
+	font-size: 20px;
+}
+
+#aboutus .right{
+	width: 20%;
+  	height: 570px;
+  	float: right;
+  	color: black;
+  	background-color: white;
+  	font-size: 40px;
+}
+
+#aboutus .right h1{
+	margin-left: 30px;
+}
+
+
+
+/*peoplesay*/
+#peoplesay{
+	height: 570px;
+	border-bottom:black 2px solid;
+	background-image: url("girl.jpg");
+	background-attachment: cover;
+	background-size: cover;
+}
+
+#peoplesay #lefth1{
+	color: white;
+	font-size: 40px;
+	margin: 0;
+	padding: 120px 0 0 130px;
+}
+
+#peoplesay #righth1{
+	float: right;
+	color: white;
+	font-size: 40px;
+	margin: -50px 80px 0 0;
+	padding: 0 50px 0 20px;
+}
+
+#peoplesay #lefth2{
+	color: white;
+	font-size: 30px;
+	padding: 180px 0 0 350px;
+}
+
+#peoplesay #righth2{
+	color: white;
+	float: right;
+	font-size: 30px;
+	margin: -60px 380px 0 400px;
+}
+
+
+
+/* jointomovement */
+#jointomovement{
+	min-height: 570px;
+	color: black;
+	background-color: white;
+}
+
+#jointomovement img{
+	margin: 33px 0 0 150px;
+}
+
+#jointomovement .left{
+	width: 50%;
+    height: 570px;
+    float: left;
+}
+
+#jointomovement .left h1{
+	font-size: 35px;
+	margin: 60px 0 -10px 60px ;
+}
+
+#jointomovement .left p{
+	font-size: 18px;
+	margin: 20px 0 0 60px ;
+}
+
+#jointomovement .right{
+	width: 50%;
+  	height: 570px;
+  	position: relative;
+  	float: right;
+  	background-color: white;
+}
+
+
+
+/* Team */
+#teamPage{
+	min-height: auto;
+	margin: 20px 50px 0 50px;
+	display: grid;
+	grid-template-columns:1fr 3fr ;
+}
+
+#teamPage .sections a{
+	text-decoration: none;
+	color: black;
+}
+
+#teamPage .sections h1{
+	font-weight: bold;
+}
+
+#teamPage .sections h3{
+	font-weight: lighter;
+}
+
+#teamPage .sections{
+	height: 100%;
+}
+
+#teamPage .info-div {
+	weight: 100%;
+}
+
+#teamPage .info{
+	float: left;
+	width: 30%;
+	height: 450px;
+	border: 1px black solid;
+	padding: 3px;
+	margin: 20px 11px 20px 11px;
+	border-radius: 10px;
+	background-color: lightgrey;
+}
+
+#teamPage .info img{
+	margin: 15px;
+}
+
+#teamPage .info h4 , .info h1{
+	text-align: center;
+}
+
+
+
+/* Update-user */
+#update-user{
+	height: 550px;
+	background-image: url("ufc.jpg");
+	background-attachment: fixed;
+}
+
+#update-user .update-box{
+	color: white;
+	border-radius: 13px;
+	text-align: left;
+	padding-top: 200px;
+	margin-left: 280px;
+	width: 400px;
+	padding: 40px 15px 20px 100px;
+}
+
+#update-user .update-box input{
+	width: 60%;
+}
+
+#update-user .update-box button{
+	margin-top: 20px;
+}
+
+
+
+/* Registration page */
+#register-sec {
+	height: 570px;
+	background-image: url("ufc.jpg");
+}
+
+.register {
+	margin-left: 350px;
+	max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  justify-content: center;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.register .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.register .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+
+form .button{
+	height: 45px;
+	margin: 35px 0
+}
+form .button input{
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+form .button input:hover{
+/* transform: scale(0.99); */
+	background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+form .user-details .input-box{
+	margin-bottom: 15px;
+	width: 100%;
+}
+.content form .user-details{
+	max-height: 300px;
+	overflow-y: scroll;
+}
+.user-details::-webkit-scrollbar{
+	width: 5px;
+}
+
+
+
+
+
+/* Login */
+#login {
+	height: 570px;
+	background-image: url("ufc.jpg");
+}
+
+#login .login-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background: white;
+	border-radius: 10px;
+}
+
+.login-box h1{
+	text-align: center;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid silver;
+}
+
+.login-box form{
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+
+form .txt_field {
+	position: relative;
+	border-bottom: 2px solid #adadad;
+	margin: 30px 0;
+}
+
+.txt_field input{
+	width: 100%;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background: none;
+	outline: none;
+}
+
+.txt_field label {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #adadad;
+	transform: translateY(-50%);
+	font-size: 16px;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.txt_field span::before{
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #2691d9;
+	transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+	top: -5px;
+	color: #2691d9;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+	width: 100%;
+}
+
+input[type="submit"]{
+	width: 100%;
+	height: 50px;
+	border: 1px solid;
+	background: #2691d9;
+	border-radius: 25px;
+	font-size: 18px;
+	color: #e9f4fb;
+	font-weight: 700;
+	color: pointer;
+	outline: none;
+}
+
+input[type="submit"]:hover{
+	border-color: #2691d9;
+	transition: .5s;
+}
+
+.signup_link {
+	margin: 30px 0;
+	text-align: center;
+	font-size: 16px;
+	color: #666666;
+}
+
+.signup_link a{
+	color: #2691d9;
+	text-decoration: none;
+}
+
+.signup_link a:hover{
+	text-decoration: underline;
+}
+
+
+
+/* Profile */
+#profile{
+	min-height: 570px;
+	color: black;
+	background-color: white;
+}
+
+#profile img{
+	margin: 33px 0 0 150px;
+}
+
+#profile .left{
+	width: 50%;
+    height: 570px;
+    float: left;
+    justify-content: left;
+}
+
+#profile .left h1{
+	font-size: 33px;
+}
+
+#profile .left p{
+	font-size: 17px;
+	margin: 33px 0 0 50px ;
+}
+
+#profile .right{
+	width: 50%;
+  	height: 570px;
+  	position: relative;
+  	float: right;
+}
+
+
+
+/* Fooler */
+footer{
+	background: #010004;
+	color: #ffffff;
+	padding: 1px 0 1px 0;
+	text-align: center;
+}
+
+footer p{
+	font-size: 25px;
+}

@@ -1,0 +1,76 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+	<section id="showcase" style="background-image: url('{% static 'images/ufc.jpg' %}')">
+		<div class="container">
+			<h1>Take care of yourself</h1>
+			<p>Who like not you can change your life and your habits!</p>
+		</div>
+	</section>
+
+	<section id="urtreiners">
+		<div class="container">
+			<h1>Get to know your trainers</h1>
+			<div class="one">
+				<img src="{% static 'images/me.jpg' %}" width=400 height=400>
+				<h3>Coach by Myau Thai</h3>
+				<a href="{% url 'user-page' 1 %}">Lear more...</a>
+			</div>
+			<div class="two">
+				<img src="{% static 'images/vova.jpg' %}" width=400>
+				<h3>Coach by Wrestling</h3>
+				<a href="{% url 'user-page' 7 %}">Lear more...</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="aboutus">
+		<div class="container">
+			<div class="left">
+				<img src="{% static 'images/boyphoto.jpg' %}" width=350 height=350>
+			</div>
+
+			<div class="center">
+				<h3>About us</h3>
+				<h1>This place is special</h1>
+				<h1>...</h1>
+				<p>An equipped place for many types of martial arts. Everything is done with a soul! Here you can stand in pairs with masters of your craft, hear and learn a lot of new things, as well as get a boost of energy and motivation. Everyone can take part, regardless of whether you are a beginner or professional. High-quality equipment and fighting spirit are the key to a good workout!</p>
+			</div>
+
+			<div class="right">
+				<h1>01</h1>
+		  </div>
+		</div>  
+	</section>
+
+	<section id="peoplesay" style="background-image: url('{% static 'images/girl.jpg' %}')">
+		<h1 id="lefth1">Discipline</h1>
+		<h1 id="righth1">Work</h1>
+		<h2 id="lefth2">All you need</h2>
+		<h2 id="righth2">To feel good</h2>
+	</section>
+
+	<section id="jointomovement">
+		<div class="container" >
+			<div class="left">
+				<h1>JOIN THE MOVEMENT</h1>
+				<p>Here you can hone your skills in martial arts, learn to stand up for yourself and your loved ones!!</p>
+				<h1>TRANSFORM LIVE</h1>
+				<p>You will learn how to be focused, set goals and achieve them.!</p>
+				<h1>PREPARE FOR BATTLE!</h1>
+				<p>As in life and in battle there are battles, you learn to accept them and fight them.!</p>
+			</div>
+		
+			<div class="right">
+				<img src="{% static 'images/images.jpg' %}" width=400 height=500>
+			</div>
+
+		</div>
+	</section>
+
+	<footer>
+	    <p>&copy Work hard</p>
+    </footer>
+{% endblock content %}

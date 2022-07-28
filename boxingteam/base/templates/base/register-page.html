@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+	<section id="register-sec" style="background-image: url('{% static 'images/ufc.jpg' %}')">
+      <div class="register">
+        <div class="title">Registration</div>
+          <div class="content">
+            <form action="" method="post">
+              {% csrf_token %}
+
+            <div class="user-details">
+              {% for field in form %}
+              <div class="input-box">
+                <span class="details">{{field.label}}</span>
+                {{field}}
+              </div>
+              {% endfor %}
+            </div>
+            <div class="button">
+             <input type="submit" value="Register">
+            </div>
+
+            </form>
+            Already have ann acc?
+            <a href="{% url 'login' %}">Login</a>
+      </div>
+      </div></section>
+
+
+{% endblock content %}

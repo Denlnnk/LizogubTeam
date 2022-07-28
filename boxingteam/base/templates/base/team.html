@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+	<section id="teamPage">
+		<div class="sections">
+			<h1><a href="{% url 'team' %}">All sections:<a/></h1>
+			<hr>
+			{% for section in sections %}
+			<h3><a href="{% url 'team'%}?q={{section.title}} ">{{section.title}}</a></h3>
+			{% endfor %}
+		</div>
+
+		<div class="info-div">
+			{% for user in users %}
+			<div class="info">
+				<img src="{{user.avatar.url}}" width="250" height="250">
+				<h1>{{user.name}}</h1>
+				<h4>About me: {{user.bio}}</h4>
+				<h4>Base skills: {{user.section}}</h4>
+			</div>
+			{% endfor %}
+		</div>
+	</section>	
+{% endblock content %}

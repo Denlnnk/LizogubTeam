@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+	<section id="login" style="background-image: url('{% static 'images/ufc.jpg' %}')">
+		<div class="login-box">
+			{% if page == 'login' %}
+			<h1>Login</h1>
+			<form method="post" action="">
+				{% csrf_token %}
+				<div class="txt_field">
+					<input type="text" name="username" required>
+					<span></span>
+					<label>Username</label>
+				</div>
+				<div class="txt_field">
+					<input type="Password" name="password" required>
+					<span></span>
+					<label>Password</label>
+				</div>
+				<input type="submit" value="login">
+				<div class="signup_link">
+					Dont have an acc?<a href="{% url 'register-page' %}">Sign up</a>
+				</div>
+				{% endif %}
+			</form>
+		</div>
+	</section>
+{% endblock content %}
+
