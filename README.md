@@ -1,2 +1,2 @@
 # LizogubTeam
-Our team site
+Our team site(currently site under development)
